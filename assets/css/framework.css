@@ -1,0 +1,284 @@
+/* Start box */
+.d-flex {
+    display: flex;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.d-grid {
+    display: grid;
+}
+.d-block {
+    display: block;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.align-center {
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fw-bold {
+    font-weight: bold;
+}
+.w-full {
+    width: 100%;
+}
+.w-fit{
+    width: fit-content;
+}
+.w-100 {
+    width: 100px;
+}
+.h-100 {
+    height: 100px;
+}
+.h-full {
+    height: 100%;
+}
+.gap-20 {
+    gap: 20px;
+}
+/* End box */
+
+/* Start Color */
+.bg-white {
+    background-color: white;
+}
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
+.bg-orange {
+    background-color: var(--orange-color);
+}
+.bg-green {
+    background-color: var(--green-color);
+}
+.bg-red {
+    background-color: var(--red-color);
+}
+.c-white {
+    color: white;
+}
+.c-black {
+    color: black;
+}
+.c-grey {
+    color: var(--grey-color);
+}
+.c-blue {
+    color: var(--blue-color);
+}
+.c-orange {
+    color: var(--orange-color);
+}
+.c-green {
+    color: var(--green-color);
+}
+.c-red {
+    color: var(--red-color);
+}
+/* End Color */
+
+/* Start Padding + margin */
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+.m-15 {
+    margin: 15px;
+}
+.m-20 {
+    margin: 20px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+/* End Padding + margin */
+
+/* Start Position */
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+/* End Position */
+
+/* Start font */
+.txt-c {
+    text-align: center;
+}
+/* End font */
+
+/* Start Border */
+.rad-6 {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.rad-10{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.rad-half {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.b-none {
+    border: none;
+}
+.border-eee {
+    border: 1px solid #eee;
+}
+.border-ccc {
+    border: 1px solid #ccc;
+}
+/* End Border */
+
+/* Start Component */
+.between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btm-shape {
+    padding: 4px 10px;
+    border-radius: 96px;
+    -webkit-border-radius: 96px;
+    -moz-border-radius: 96px;
+    -ms-border-radius: 96px;
+    -o-border-radius: 96px;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Component */
+
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+    .txt-c-mobile {
+        text-align: center;
+    }
+    .block-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}

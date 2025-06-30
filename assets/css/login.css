@@ -1,0 +1,215 @@
+
+/* Fonts */
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../../Yanson-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyCustomFont2';
+  src: url('../../Yanson-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+    background-size:cover;
+    max-width:100%;
+    background-color: #f8f7f7;
+}
+#vid{
+        /* margin-top: -15px; */
+            width: 100%;
+            height:auto ;
+            position:absolute;
+            z-index: -1;
+            animation-timing-function: linear;
+        }
+.main{
+	width: 450px;
+	height: 600px;
+	overflow: hidden;
+    border-radius: 10px;
+	box-shadow: 5px 20px 50px #000000a0;
+}
+#chk{
+	display: none;
+    z-index: 3;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.signup .row{
+	display: flex;
+}
+label{
+	color:  #1acc8d;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 40px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px auto;
+	font-family: 'MyCustomFont';
+}
+.row1 {
+    display: flex;
+    gap: 20px;
+    margin: 15px auto;
+    font-family: 'MyCustomFont';
+    width: 100%; /* Ensure the container takes full width */
+    max-width: none; /* Remove any potential max-width constraints */
+}
+
+.row1 input {
+    width:40%; /* Make the input take the full width of the container */
+    height: 45px; /* Consistent height for better appearance */
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    font-size: 20px;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+	margin-right: 135px;
+	color: #525252;
+}
+input {
+    width: 40%;
+    height: 45px;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    font-size: 18px;
+    box-sizing: border-box;
+    direction: rtl; /* Right-to-left direction for Arabic text */
+    text-align: right; /* Align placeholder text to the right */
+	font-family: 'MyCustomFont';
+	color: #3d3d3d;
+}
+select {
+	   width: 40%;
+    height: 45px;
+    background: #e0dede;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    font-size: 18px;
+    box-sizing: border-box;
+    direction: rtl; /* Right-to-left direction for Arabic text */
+    text-align: right; /* Align placeholder text to the right */
+	font-family: 'MyCustomFont';
+	color: #888;
+}
+
+/* Style the placeholder options for both inputs and selects */
+input::placeholder,
+select option[disabled][selected] {
+    color: #888; /* Unified placeholder color */
+}
+
+/* Ensure non-placeholder options have normal text color */
+select option:not([disabled]) {
+    color: #525252;
+}
+
+/* Optional: Improve hover and focus effects */
+input:hover,
+input:focus,
+select:hover,
+select:focus {
+    background: #d0cece;
+}
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+	font-family: 'MyCustomFont';
+}
+
+.upload-button {
+    background: #e0dede;
+    color: #888;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: right;
+    direction: rtl;
+	margin: 0px 6px;
+
+}
+
+.upload-button:hover {
+    background: #d0cece;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 20px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background:  #1acc8d;
+	font-size: 1em;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background:  #1acc8d;
+}
+.login{
+	height: 650px;
+	background: #091c51;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+	margin-top: 50px;
+}
+.login label{
+	color:  #1acc8d;
+	transform: scale(.6);
+	padding: 20px;
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-580px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+.login button {
+    margin: 50px auto;
+	width: 40%;
+}
